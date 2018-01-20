@@ -19,7 +19,7 @@ def main():
     else:
         childrenList=parent.GetChildren()
         for t in childrenList:
-            print(t+" disabled")
+            print(t.GetName()+" disabled")
             t.SetChecked(0)
     c4d.StatusClear()
     c4d.EventAdd()
